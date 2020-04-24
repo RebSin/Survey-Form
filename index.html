@@ -4,75 +4,79 @@
   <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css" >
+
   </head>
   <body>
-    <h1 id = "title"> SURVEY FORM </h1>
-    <p id ="description"> This is a quick survey form done for freecodecamp </p>
+<div class="jumbotron">
+    <h1 id = "title" class="display-3"> SURVEY FORM </h1>
+    <p class="lead" id ="description"> <i> This is a quick survey form done for freecodecamp </i> </p>
     <form id ="survey-form">
-        <div id = "mainInput">
-      <label for="name" id="name-label"> Name </label>
-      <input type="text" id="name"  placeholder= "Jane Doe" required>
-
-      <label for="email" id="email-label"> Email </label>
-      <input type="email" id= "email"  placeholder= "janedoe@gmail.com"required>
-      <!-- user story #6 -->
-      <label for="number" id="number-label"> Number </label>
-      <input type="number" id ="number" min="0" max="5" placeholder= "3">
-      <!-- User Story #8 -->
+      <div class="form-group row">
+      <label for="name" id="name-label" class="col-sm-2 col-form-label"> Name </label>
+        <div class="col-sm-10">
+          <input type="text" id="name"  placeholder= "Jane Doe" required>
+        </div>
       </div>
-      <select id="dropdown">
+
+      <div class="form-group row">
+      <label for="email" id="email-label" class="col-sm-2 col-form-label"> Email </label>
+        <div class="col-sm-10">
+          <input type="email" id= "email"  placeholder= "janedoe@gmail.com"required>
+        </div>
+      </div>
+
+      <div class="form-group row">
+      <label for="number" id="number-label" class="col-sm-2 col-form-label"> Number </label>
+        <div class="col-sm-10">
+          <input type="number" id ="number" min="0" max="5" placeholder= "3">
+        </div>
+      </div>
+
+      <select id="dropdown" class="custom-select">
+        <option selected> Open this select menu </option>
         <option value="volvo">Volvo</option>
         <option value="saab">Saab</option>
         <option value="mercedes">Mercedes</option>
         <option value="audi">Audi</option>
       </select>
 
-      <div id = "radioButtons">
-      <input type="radio" id="male" name="name" value="male">
-      <label for="male">Male</label><br>
+      <br>
+      <br>
+      <div class="form-check">
+      <input class="form-check-input" type="radio" id="male" name="name" value="male">
+      <label class="form-check-label" for="male">Male</label><br>
 
-      <input type="radio" id="female" name="name" value="female">
-      <label for="female">Female</label><br>
+      <input class="form-check-input" type="radio" id="female" name="name" value="female">
+      <label class="form-check-label" for="female">Female</label><br>
 
-      <input type="radio" id="other" name="name" value="other">
-      <label for="other">Other</label>
+      <input class="form-check-input" type="radio" id="other" name="name" value="other">
+      <label class="form-check-label" for="other">Other</label>
+      </div>
+      <br>
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+      <label class="form-check-label"for="vehicle1"> I have a bike</label><br>
+
+      <input class="form-check-input" type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label class="form-check-label"for="vehicle2"> I have a car</label><br>
+
+      <input class="form-check-input" type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label class="form-check-label"for="vehicle3"> I have a boat</label><br>
+      </div>
+      <br>
+      <h3 id ="additionalComHeading"> Additional Comments </h3>
+
+      <div class="form-group row">
+        <textarea id="textarea" class ="form-control">
+        </textarea>
       </div>
 
-      <div id = "checkBoxes">
-      <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-      <label for="vehicle1"> I have a bike</label><br>
-
-      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-      <label for="vehicle2"> I have a car</label><br>
-
-      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-      <label for="vehicle3"> I have a boat</label><br>
-      </div>
-      <h2 id ="additionalComHeading"> Additional Comments </h2>
-
-      <textarea id="textarea" rows="4" cols="50">
-      </textarea>
-
-      <button type="submit" name="button" id= "submit"> Submit </button>
-
+      <div class="form-group row">
+        <!-- <div class="col-sm-10 offset-sm-2"> -->
+          <button type="submit" name="button" id= "submit" class="btn btn-primary btn-lg form-control"> Submit </button>
+        </div>
+      <!-- </div> -->
     </form>
-
-
-    <!-- <form>
-      <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-10">
-          <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-        </div>
-      </div>
-      <div class="form-group row">
-        <div class="col-sm-10 offset-sm-2">
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
-      </div>
-    </form> -->
-
-
-  </body>
-
+    </body>
 </html>
