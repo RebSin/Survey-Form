@@ -5,3 +5,79 @@
 #description{
   text-align: center;
 }
+
+#name-label {
+  font-size: 150%;
+  padding-left: 5%;
+}
+
+#name {
+  padding: 12px 20px;
+  margin-left: 5%;
+}
+
+#email-label {
+  font-size: 150%;
+  padding-left: 5%;
+}
+
+#email{
+  padding: 12px 20px;
+  margin-left: 5%;
+}
+
+#number-label {
+  font-size: 150%;
+  padding-left: 5%;
+}
+
+#number {
+  padding: 12px 20px;
+  margin-left: 5%;
+}
+
+#dropdown {
+  margin-left: 3%;
+  width: 90vh;
+}
+
+#genderLabel {
+  font-size: 150%;
+  padding-left: 3%;
+}
+
+#checkboxes {
+  padding-left: 5%;
+}
+
+#transport {
+  font-size: 150%;
+  padding-left: 3%;
+}
+
+#vehicleList {
+  padding-left: 5%;
+}
+
+#additionalComHeading {
+  padding-left: 3%;
+}
+
+#textarea {
+  width: 90vh;
+  margin-left: 3%;
+}
+
+#submit {
+  width: 90vh;
+  margin-left: 3%;
+}
+#survey-form {
+  background-color: #EEEEEE;
+  width: 130vh;
+  margin-left: 15%;
+  padding-left: 10%;
+  padding-right: 1%;
+  padding-top: 5%;
+  padding-bottom: 20px;
+}
